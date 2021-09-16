@@ -18,6 +18,11 @@
   padding: 1rem 0;
 }
 
+.App-nav {
+  display: flex;
+  align-items: center;
+}
+
 .App-content {
   padding-top: 1rem;
   align-items: flex-start;
