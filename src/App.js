@@ -35,8 +35,8 @@ const App = () => {
           <>
             <h1>tapio Auth: Sample SPA </h1>
             <p>This is a sample App for authentication against the tapio B2C for the tapio partners with the <strong>Authorization code flow with PKCE</strong>.
-              You can log in here with your tapio account. For more information regarding the development please check the github repo and
-              the tapio developer portal.</p>
+              You can log in here with your tapio account. For more information regarding the development please check the <a href="https://github.com/tapioone/tapio-auth-react" target="_blank" rel="noreferrer">github repo</a> and
+              the <a href="https://developer.tapio.one/general/authentication-implementation" target="_blank" rel="noreferrer">tapio developer portal</a>.</p>
           </>
         }
         <h3>

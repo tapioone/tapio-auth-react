@@ -30,8 +30,8 @@ const GetAccessToken = () => {
                 <div className="App-access-token-container">
                     {accessToken}
                 </div>
-                <button className="link align-self-center" onClick={() => navigator.clipboard.writeText(accessToken)}>Copy token to clipboard</button>
-                <a className="link align-self-center" href={"https://jwt.ms/#access_token=" + accessToken} target="_blank" rel="noreferrer">Check token at jwt.ms</a>
+                <button style={{ padding: "0.5rem" }} className="link align-self-center" onClick={() => navigator.clipboard.writeText(accessToken)}>Copy token to clipboard</button>
+                <a style={{ padding: "0.5rem" }} className="link align-self-center" href={"https://jwt.ms/#access_token=" + accessToken} target="_blank" rel="noreferrer">Check token at jwt.ms</a>
             </>
             :
             <button className="button align-self-center" onClick={RequestAccessToken}>Request Access Token</button>

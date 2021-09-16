@@ -66,18 +66,17 @@
   font-family: monospace;
 }
 
-.link {
+.link, a {
   background: none;
   border: none;
   font-family: 'Rajdhani', sans-serif;
-  padding: 0.5rem;
   font-size: 1rem;
   text-decoration: underline;
   color: #00ff8c;
   cursor: pointer;
 }
 
-.link:hover {
+.link:hover, a:hover {
   opacity: 0.8;
 }
 
