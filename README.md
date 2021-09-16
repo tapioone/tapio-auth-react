@@ -5,10 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project is a example how a basic auth implementation against the tapio B2C could look like. We are using the Authorization Code Flow with PKCE with the [@azure/msal-react](https://www.npmjs.com/package/@azure/msal-react) library. The documentation for the authentication is available in the [tapio Developer Portal](https://developer.tapio.one/general/authentication-implementation)
 
 Further reading:
-[Basic knowledge about Authorization Code Flow with PKCE](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce)
-[Tutorial for MSAL and Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react)
-[Working with MSAL and Azure B2C](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/working-with-b2c.md)
-[Request an access token in B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/access-tokens#openid-connect-scopes)
+- [Basic knowledge about Authorization Code Flow with PKCE](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce)
+- [Tutorial for MSAL and Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react)
+- [Working with MSAL and Azure B2C](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/working-with-b2c.md)
+- [Request an access token in B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/access-tokens#openid-connect-scopes)
 
 ## Available Scripts
 
