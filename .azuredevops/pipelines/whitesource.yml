@@ -3,6 +3,8 @@ trigger:
     include:
       - master
 
+pr: none
+
 pool:
   vmImage: ubuntu-20.04
 
