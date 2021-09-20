@@ -1,10 +1,17 @@
-# Getting Started with the tapio react authentication SPA sample
+<div align=center>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>tapio-auth-react</h1>
 
-This project is a example how a basic auth implementation against the tapio B2C could look like. We are using the Authorization Code Flow with PKCE with the [@azure/msal-react](https://www.npmjs.com/package/@azure/msal-react) library. The documentation for the authentication is available in the [tapio Developer Portal](https://developer.tapio.one/general/authentication-implementation)
+</div>
+
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/tapioone/tapio-auth-react/CI/master)](https://github.com/tapioone/tapio-auth-react/actions) [![GitHub](https://img.shields.io/github/license/tapioone/tapio-auth-react)](https://github.com/tapioone/tapio-auth-react/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/tapioone/tapio-auth-react)](https://github.com/tapioone/tapio-auth-react/issues)
+
+This is a reference implementation of the Authorization Code Flow with PKCE against the tapio [AD B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/overview) using [@azure/msal-react](https://www.npmjs.com/package/@azure/msal-react).
+
+Documentation on authentication in the tapio ecosystem is available in the [tapio Developer Portal](https://developer.tapio.one/general/authentication-implementation).
 
 Further reading:
+
 - [Basic knowledge about Authorization Code Flow with PKCE](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce)
 - [Tutorial for MSAL and Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react)
 - [Working with MSAL and Azure B2C](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/working-with-b2c.md)
@@ -46,32 +53,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Notes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
