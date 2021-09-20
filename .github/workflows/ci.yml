@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: yarn build
       - name: Upload build artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2.2.4
         with:
           name: app
           path: build
