@@ -15,9 +15,9 @@ jobs:
         with:
           node-version: "12.x"
       - name: Install dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
       - name: Build
-        run: npm run build
+        run: yarn build
       - name: Upload build artifact
         uses: actions/upload-artifact@v1
         with:
