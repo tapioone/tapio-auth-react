@@ -9,6 +9,10 @@ import App from './App';
 
 const msalInstance = new PublicClientApplication(msalConfig);
 
+// handleRedirectPromise is needed when the RedirectFlow is used
+// https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-js-initializing-client-applications
+msalInstance.handleRedirectPromise();
+
 ReactDOM.render(
   <React.StrictMode>
     <MsalProvider instance={msalInstance}>
