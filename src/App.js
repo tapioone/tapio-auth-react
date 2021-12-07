@@ -1,4 +1,6 @@
+import React, { useEffect, useState } from "react";
 import { useIsAuthenticated, useMsal } from "@azure/msal-react";
+import { InteractionStatus, InteractionRequiredAuthError } from "@azure/msal-browser";
 
 import logo from './logo.svg';
 import './App.css';
@@ -6,17 +8,42 @@ import './App.css';
 import LoginButton from './LoginButton';
 import LogoutButton from "./LogoutButton";
 import GetAccessToken from "./GetAccessToken";
+import { loginRequest } from "./authConfig";
 
 const App = () => {
   const isAuthenticated = useIsAuthenticated();
-  const { accounts } = useMsal();
+  const { accounts, instance, inProgress } = useMsal();
+
+  // using this state variable to only show "unauthenticated" flags once silent sso ran
+  // this might not be needed in real world applications that have a router etc.
+  const [triedSilentLogin, setTriedSilentLogin] = useState(false);
+
+  useEffect(() => {
+    // when refreshing the page, we silently call the authentication provider
+    // because 'isAuthenticated' will be false until a call to active directory happens
+    if (inProgress === InteractionStatus.None && !isAuthenticated && !triedSilentLogin) {
+      instance.ssoSilent(loginRequest)
+        .catch(err => {
+          // user has no active session at b2c and needs to login again
+          if (err instanceof InteractionRequiredAuthError) {
+            // inside here you could either
+            //   - Redirect to a dedicated login page
+            //   - call instance.loginRedirect(loginRequest) directly
+            // for the purpose of this demo application none of both makes actually sense
+            // for real world applications you probalby want to call loginRedirect inside here
+          }
+        })
+        .finally(() => setTriedSilentLogin(true));
+    }
+  }, [inProgress, isAuthenticated, instance, triedSilentLogin])
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="App-nav">
-          {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+          {(!isAuthenticated && triedSilentLogin) && <LoginButton />}
+          {(isAuthenticated) && <LogoutButton />}
           <a style={{ marginLeft: "1rem" }} href="https://github.com/tapioone/tapio-auth-react">
             <svg style={{ display: "flex", alignSelf: "center" }} width="24" version="1.1" viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fillRule="evenodd" strokeWidth="1">
@@ -31,7 +58,7 @@ const App = () => {
       </header>
       <main className="App-content">
         {
-          !isAuthenticated &&
+          (!isAuthenticated && triedSilentLogin) &&
           <>
             <h1>tapio Auth: Sample SPA </h1>
             <p>This is a sample App for authentication against the tapio B2C for the tapio partners with the <strong>Authorization code flow with PKCE</strong>.
@@ -55,7 +82,7 @@ const App = () => {
             <GetAccessToken />
           </div>
         }
-      </main >
+      </main>
     </div >
   );
 }
