@@ -16,10 +16,10 @@
   dependencies:
     debug "^4.1.1"
 
-"@azure/msal-react@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@azure/msal-react/-/msal-react-1.1.2.tgz#bde82a42c18ec6c6dc5de0dbcea0281a28fec223"
-  integrity sha512-iSHhzCbHs7S+cOnBCKA+4MjwcRxJhsMCUw6XcIkzZqWW1vvQb1k0yy3EL6jfTnlD8uXSNxGOum3Gltmdq7TqEg==
+"@azure/msal-react@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-react/-/msal-react-1.2.0.tgz#94c7b109e970ef210fd6db7f375f9e806d558fe8"
+  integrity sha512-4mOldymo7sLwrflwR04cojTx7X2HlS/h3tu4VKZaUV4Les91UG0V5CWtjWGDQnZCCW/EiJ0o3lYZsYKgSRoAKA==
 
 "@babel/code-frame@7.10.4":
   version "7.10.4"
