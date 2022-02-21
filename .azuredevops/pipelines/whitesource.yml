@@ -3,23 +3,26 @@ trigger:
     include:
       - master
 
+resources:
+  repositories:
+    - repository: deployment
+      type: git
+      name: tapio/tapio.Deployment
+
 pr: none
 
 pool:
   vmImage: ubuntu-20.04
 
-steps:
-  - checkout: self
-    clean: true
+jobs:
+- template: BuildTemplates/jobs/whitesource.yml@deployment
+  parameters:
+    productName: github.com/tapioone
+    projectName: github.com/tapioone/tapio-auth-react
+    scanDirectory: $(System.DefaultWorkingDirectory)
+    preSteps:
+      - task: NodeTool@0 
+        inputs:
+          versionSpec: 12.x
 
-  - task: NodeTool@0 
-    inputs:
-      versionSpec: 12.x
-
-  - script: yarn install --frozen-lockfile
-
-  - task: WhiteSource@21
-    displayName: "WhiteSource Scan"
-    inputs:
-      projectName: github.com/tapioone/tapio-auth-react
-      cwd: $(System.DefaultWorkingDirectory)
+      - script: yarn install --frozen-lockfile
