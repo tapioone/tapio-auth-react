@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@azure/msal-browser": "^2.33.0",
-    "@azure/msal-react": "^1.5.2",
+    "@azure/msal-react": "^1.5.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3"
