@@ -13,5 +13,6 @@ export const msalConfig = {
 
 // msal request --> https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/request-response-object.md
 export const loginRequest = {
-    scopes: ["openid", "offline_access", "https://tapiousers.onmicrosoft.com/React-PKCE-SampleApp/Read"] // https://docs.microsoft.com/en-us/azure/active-directory-b2c/access-tokens#openid-connect-scopes
+    scopes: ["openid", "offline_access", "https://tapiousers.onmicrosoft.com/React-PKCE-SampleApp/Read"], // https://docs.microsoft.com/en-us/azure/active-directory-b2c/access-tokens#openid-connect-scopes
+    extraQueryParameters: { theme: "dark" } // default is light mode
 };
