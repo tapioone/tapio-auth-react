@@ -19,9 +19,9 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
-/*! @azure/msal-browser v2.37.0 2023-05-01 */
+/*! @azure/msal-browser v2.37.1 2023-06-07 */
 
-/*! @azure/msal-common v13.0.0 2023-05-01 */
+/*! @azure/msal-common v13.1.0 2023-06-07 */
 
 /** @license React v0.20.2
  * scheduler.production.min.js
