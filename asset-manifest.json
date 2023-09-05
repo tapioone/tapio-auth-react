@@ -5,16 +5,16 @@
     "main.js.map": "/tapio-auth-react/static/js/main.c9031d64.chunk.js.map",
     "runtime-main.js": "/tapio-auth-react/static/js/runtime-main.d4232e81.js",
     "runtime-main.js.map": "/tapio-auth-react/static/js/runtime-main.d4232e81.js.map",
-    "static/js/2.33dbba9d.chunk.js": "/tapio-auth-react/static/js/2.33dbba9d.chunk.js",
-    "static/js/2.33dbba9d.chunk.js.map": "/tapio-auth-react/static/js/2.33dbba9d.chunk.js.map",
+    "static/js/2.e3f28af3.chunk.js": "/tapio-auth-react/static/js/2.e3f28af3.chunk.js",
+    "static/js/2.e3f28af3.chunk.js.map": "/tapio-auth-react/static/js/2.e3f28af3.chunk.js.map",
     "index.html": "/tapio-auth-react/index.html",
     "static/css/main.39ded69a.chunk.css.map": "/tapio-auth-react/static/css/main.39ded69a.chunk.css.map",
-    "static/js/2.33dbba9d.chunk.js.LICENSE.txt": "/tapio-auth-react/static/js/2.33dbba9d.chunk.js.LICENSE.txt",
+    "static/js/2.e3f28af3.chunk.js.LICENSE.txt": "/tapio-auth-react/static/js/2.e3f28af3.chunk.js.LICENSE.txt",
     "static/media/logo.30091f21.svg": "/tapio-auth-react/static/media/logo.30091f21.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d4232e81.js",
-    "static/js/2.33dbba9d.chunk.js",
+    "static/js/2.e3f28af3.chunk.js",
     "static/css/main.39ded69a.chunk.css",
     "static/js/main.c9031d64.chunk.js"
   ]
