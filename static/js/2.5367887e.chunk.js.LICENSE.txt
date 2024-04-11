@@ -19,7 +19,7 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
-/*! @azure/msal-browser v2.38.3 2023-10-27 */
+/*! @azure/msal-browser v2.38.4 2024-03-26 */
 
 /*! @azure/msal-common v13.3.1 2023-10-27 */
 
