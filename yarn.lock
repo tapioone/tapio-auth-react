@@ -14,10 +14,10 @@
   resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-13.3.1.tgz#012465bf940d12375dc47387b754ccf9d6b92180"
   integrity sha512-Lrk1ozoAtaP/cp53May3v6HtcFSVxdFrg2Pa/1xu5oIvsIwhxW6zSPibKefCOVgd5osgykMi5jjcZHv8XkzZEQ==
 
-"@azure/msal-react@^1.5.12":
-  version "1.5.12"
-  resolved "https://registry.yarnpkg.com/@azure/msal-react/-/msal-react-1.5.12.tgz#d0a74161977bca6ffc30bb9177f7f9f5314aa5b8"
-  integrity sha512-waz8wFWVSLn3g8033uK6byGF29w3Lpg5gzuTKEJyBaAgoed3p09nuMYZRLgqFdXeAazpw/YthLdKRNN9DlMrQA==
+"@azure/msal-react@^1.5.13":
+  version "1.5.13"
+  resolved "https://registry.yarnpkg.com/@azure/msal-react/-/msal-react-1.5.13.tgz#1b1d2b2c3108984c0d9de2d5ed9a872a35968141"
+  integrity sha512-rv3q7hwZS5VQs5AXgdoXwrPnCc0/xs3YmWNxhyCFw7JWZ3Nq0hV1JJSvWXZgXQIINOV7hCky3lYaRgHYT9qyKw==
 
 "@babel/code-frame@7.10.4":
   version "7.10.4"
