@@ -4,7 +4,7 @@ export const msalConfig: Configuration = {
     auth: {
         clientId: "e35cbc3c-7055-43a2-b978-d8d24a040140",
         authority: "https://login.mytapio.one/tapiousers.onmicrosoft.com/B2C_1A_TAPIO_SIGNIN_SHORT", // https://<your-tenant>.b2clogin.com/<your-tenant>.onmicrosoft.com/<your-policyID>
-        redirectUri: "http://localhost:5173",
+        redirectUri: "https://tapioone.github.io/tapio-auth-react/", // for dev use redirectUri: "http://localhost:5173",
         knownAuthorities: ["https://login.mytapio.one"]
     },
     cache: {
