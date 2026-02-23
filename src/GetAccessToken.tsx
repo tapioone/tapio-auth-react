@@ -1,28 +1,37 @@
 import { useState } from "react";
 import { useMsal } from "@azure/msal-react";
+import type { SilentRequest } from "@azure/msal-browser";
 
 import { loginRequest } from "./authConfig";
 
 const GetAccessToken = () => {
     const { instance, accounts } = useMsal();
-    const [accessToken, setAccessToken] = useState(null);
+    const [accessToken, setAccessToken] = useState<string | null>(null);
 
     const RequestAccessToken = () => {
-        const request = {
-            ...loginRequest,
-            account: accounts[0] // account is needed additional to the scope
+        const account = accounts[0];
+
+        if (!account) {
+            alert("No signed in account found. Please login first.");
+            return;
+        }
+
+        const request: SilentRequest = {
+            scopes: loginRequest.scopes,
+            account // account is needed additional to the scope
         };
 
-        instance.acquireTokenSilent(request).then((response) => {
-            response.accessToken ?
-                setAccessToken(response.accessToken) :
-                alert("Could not receive an Access Token. Please check your scope.")
-        }).catch((e) => {
-            instance.acquireTokenRedirect(request).then((response) => {
-                setAccessToken(response.accessToken);
+        instance
+            .acquireTokenSilent(request)
+            .then((response) => {
+                response.accessToken
+                    ? setAccessToken(response.accessToken)
+                    : alert("Could not receive an Access Token. Please check your scope.");
+            })
+            .catch(() => {
+                instance.acquireTokenRedirect(request);
             });
-        });
-    }
+    };
 
     return (
         accessToken ?
