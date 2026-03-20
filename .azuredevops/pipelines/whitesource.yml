@@ -12,7 +12,7 @@ resources:
 pr: none
 
 pool:
-  vmImage: ubuntu-20.04
+  vmImage: ubuntu-22.04
 
 jobs:
 - template: BuildTemplates/jobs/whitesource.yml@deployment
