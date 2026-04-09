@@ -17,11 +17,11 @@ jobs:
       - name: Setup node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "12.x"
+          node-version-file: '.nvmrc'
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
       - name: Build
-        run: yarn build
+        run: npm run build
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:

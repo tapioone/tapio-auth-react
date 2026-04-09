@@ -1,6 +1,7 @@
 import { useMsal } from "@azure/msal-react";
+import type { IPublicClientApplication } from "@azure/msal-browser";
 
-const handleLogout = (instance) => {
+const handleLogout = (instance: IPublicClientApplication) => {
     instance.logoutRedirect().catch(e => {
         console.error(e);
     });
